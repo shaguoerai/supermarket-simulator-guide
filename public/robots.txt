@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://supermarket-simulator-guide.vercel.app/sitemap.xml
