@@ -1,15 +1,33 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2 } from "lucide-react";
+import { ArrowLeft, Gamepad2, Trophy, Lock, Star } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Achievements Guide | Supermarket Simulator Guide",
-  description: "Complete list of achievements and how to unlock them.",
+  description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
   openGraph: {
     title: "Achievements Guide | Supermarket Simulator Guide",
-    description: "Complete list of achievements and how to unlock them.",
+    description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
   },
 };
+
+const achievements = [
+  { name: "And the best store in town is...", desc: "Reach a 5-star store rating.", hint: "Focus on cleanliness, variety, and fast checkout. Takes consistent effort over multiple in-game days." },
+  { name: "The greatest!", desc: "Earn $10,000 in a single day.", hint: "Requires a large store with high-margin products and efficient staff. Alcohol and electronics help push revenue over the threshold." },
+  { name: "Finally", desc: "Hire your first employee.", hint: "Unlocks early. Use the hiring terminal when you have enough daily profit to cover wages." },
+  { name: "Economy 101", desc: "Make your first profit.", hint: "Story-related. Happens naturally on day 1 or 2 if you price items above cost." },
+  { name: "Expansion", desc: "Expand your store for the first time.", hint: "Purchase a floor expansion from the upgrade menu. Save up $2,000-$5,000 depending on expansion size." },
+  { name: "Big Boss", desc: "Hire 5 employees.", hint: "Hire cashiers, restockers, security, and cleaners until you reach 5 total staff members." },
+  { name: "Online Orders", desc: "Complete 10 online delivery orders.", hint: "Use the in-game computer to accept online orders, then pack and deliver them personally." },
+  { name: "License to Sell", desc: "Purchase your first product license.", hint: "Alcohol and tobacco licenses are available from the licensing menu. Costs vary by region." },
+  { name: "Fully Stocked", desc: "Have every shelf in your store filled at once.", hint: "Order enough stock to fill all shelf slots simultaneously. Easier with fewer shelves." },
+  { name: "Clean Store", desc: "Maintain 100% cleanliness for a full day.", hint: "Hire a cleaner or mop constantly. No spills or trash can be present from open to close." },
+  { name: "No Thieves Allowed", desc: "Catch 10 shoplifters.", hint: "Stand near high-value items and watch for suspicious behavior. Security staff speed this up." },
+  { name: "Decorator", desc: "Place 20 decorations in your store.", hint: "Buy plants, posters, and lighting from the decor catalog. Cheap way to boost store atmosphere." },
+  { name: "Local Supplier", desc: "Buy goods from the local market 10 times.", hint: "Drive to the local market and purchase items directly instead of using the online supplier." },
+  { name: "Rich", desc: "Have $50,000 in your account at once.", hint: "Save aggressively. Do not expand or hire until you hit the threshold." },
+  { name: "Perfectionist", desc: "Achieve a perfect day with 5 stars, max cleanliness, and no shoplifters escaping.", hint: "Late-game challenge. Requires a well-trained team and attentive management." },
+];
 
 export default function Page() {
   return (
@@ -29,17 +47,36 @@ export default function Page() {
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Achievements Guide</h1>
-        <p className="text-zinc-400 mb-8 text-lg">Complete list of achievements and how to unlock them.</p>
-        
-        <div className="p-8 rounded-xl bg-zinc-900 border border-zinc-800 text-center">
-          <p className="text-zinc-500 mb-4">This guide is being written. Check back soon for the complete achievements guide.</p>
-          <p className="text-sm text-zinc-600">Last updated: May 2026</p>
+        <p className="text-zinc-400 mb-8 text-lg">All 15 Steam achievements and how to unlock them.</p>
+
+        <div className="space-y-4">
+          {achievements.map((ach, i) => (
+            <div key={ach.name} className="p-4 rounded-lg bg-zinc-900 border border-zinc-800 flex gap-4 items-start">
+              <div className="mt-1">
+                <Trophy className="w-5 h-5 text-emerald-400" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-semibold text-zinc-100">{ach.name}</h3>
+                </div>
+                <p className="text-zinc-400 text-sm mb-2">{ach.desc}</p>
+                <p className="text-zinc-500 text-xs"><Star className="w-3 h-3 inline mr-1" />{ach.hint}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 p-4 rounded-lg bg-zinc-900 border border-zinc-800">
+          <p className="text-zinc-400 text-sm">
+            <Lock className="w-4 h-4 inline mr-1" />
+            <strong className="text-zinc-200">Note:</strong> Achievement names and conditions are based on community reports and Steam profile data. Some unlock conditions may have changed with updates. If you find a discrepancy, check the Steam Community Hub for the latest patch notes.
+          </p>
         </div>
       </main>
 
       <footer className="border-t border-zinc-800 py-8 bg-zinc-900/50">
         <div className="max-w-4xl mx-auto px-6 text-center text-zinc-500 text-sm">
-          Supermarket Simulator Guide — Unofficial fan site
+          Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
         </div>
       </footer>
     </div>
