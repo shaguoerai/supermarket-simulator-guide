@@ -118,6 +118,21 @@ export default function Home() {
               Unofficial fan site. Not affiliated with the game developer.
             </p>
           </div>
+          <div className="mt-6 pt-6 border-t border-zinc-800/50 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-zinc-500">
+            <p>
+              All game content, names, and trademarks are property of their respective owners.
+              This site is for informational purposes only.
+            </p>
+            <div className="flex items-center gap-4 shrink-0">
+              <Link href="/privacy-policy/" className="text-emerald-400 hover:underline">
+                Privacy Policy
+              </Link>
+              <span>·</span>
+              <Link href="/" className="text-emerald-400 hover:underline">
+                Home
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

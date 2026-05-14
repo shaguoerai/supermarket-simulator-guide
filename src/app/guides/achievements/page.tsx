@@ -75,8 +75,23 @@ export default function Page() {
       </main>
 
       <footer className="border-t border-zinc-800 py-8 bg-zinc-900/50">
-        <div className="max-w-4xl mx-auto px-6 text-center text-zinc-500 text-sm">
-          Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
+        <div className="max-w-4xl mx-auto px-6 text-center text-zinc-500 text-sm space-y-3">
+          <p>
+            Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
+          </p>
+          <p>
+            All game content, names, and trademarks are property of their respective owners.
+            This site is for informational purposes only. Information may not be 100% accurate or up-to-date.
+          </p>
+          <div className="flex items-center justify-center gap-4 pt-2">
+            <Link href="/privacy-policy/" className="text-emerald-400 hover:underline">
+              Privacy Policy
+            </Link>
+            <span>·</span>
+            <Link href="/" className="text-emerald-400 hover:underline">
+              Home
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
