@@ -31,15 +31,15 @@ const achievements = [
 
 export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-zinc-950 text-zinc-100">
-      <header className="border-b border-zinc-800 bg-zinc-900/50">
+    <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
-          <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-emerald-400 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back
           </Link>
           <div className="flex items-center gap-2 ml-auto">
-            <Gamepad2 className="w-5 h-5 text-emerald-400" />
+            <Gamepad2 className="w-5 h-5 text-[#d97706]" />
             <span className="font-semibold">Supermarket Simulator Guide</span>
           </div>
         </div>
@@ -47,35 +47,35 @@ export default function Page() {
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Achievements Guide</h1>
-        <p className="text-zinc-400 mb-8 text-lg">All 15 Steam achievements and how to unlock them.</p>
+        <p className="text-[#8a9299] mb-8 text-lg">All 15 Steam achievements and how to unlock them.</p>
 
         <div className="space-y-4">
           {achievements.map((ach, i) => (
-            <div key={ach.name} className="p-4 rounded-lg bg-zinc-900 border border-zinc-800 flex gap-4 items-start">
+            <div key={ach.name} className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] flex gap-4 items-start">
               <div className="mt-1">
-                <Trophy className="w-5 h-5 text-emerald-400" />
+                <Trophy className="w-5 h-5 text-[#d97706]" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-semibold text-zinc-100">{ach.name}</h3>
+                  <h3 className="font-semibold text-[#181c25]">{ach.name}</h3>
                 </div>
-                <p className="text-zinc-400 text-sm mb-2">{ach.desc}</p>
-                <p className="text-zinc-500 text-xs"><Star className="w-3 h-3 inline mr-1" />{ach.hint}</p>
+                <p className="text-[#8a9299] text-sm mb-2">{ach.desc}</p>
+                <p className="text-[#8a9299] text-xs"><Star className="w-3 h-3 inline mr-1" />{ach.hint}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 p-4 rounded-lg bg-zinc-900 border border-zinc-800">
-          <p className="text-zinc-400 text-sm">
+        <div className="mt-10 p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+          <p className="text-[#8a9299] text-sm">
             <Lock className="w-4 h-4 inline mr-1" />
-            <strong className="text-zinc-200">Note:</strong> Achievement names and conditions are based on community reports and Steam profile data. Some unlock conditions may have changed with updates. If you find a discrepancy, check the Steam Community Hub for the latest patch notes.
+            <strong className="text-[#181c25]">Note:</strong> Achievement names and conditions are based on community reports and Steam profile data. Some unlock conditions may have changed with updates. If you find a discrepancy, check the Steam Community Hub for the latest patch notes.
           </p>
         </div>
       </main>
 
-      <footer className="border-t border-zinc-800 py-8 bg-zinc-900/50">
-        <div className="max-w-4xl mx-auto px-6 text-center text-zinc-500 text-sm space-y-3">
+      <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
+        <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm space-y-3">
           <p>
             Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
           </p>
@@ -84,11 +84,11 @@ export default function Page() {
             This site is for informational purposes only. Information may not be 100% accurate or up-to-date.
           </p>
           <div className="flex items-center justify-center gap-4 pt-2">
-            <Link href="/privacy-policy/" className="text-emerald-400 hover:underline">
+            <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">
               Privacy Policy
             </Link>
             <span>·</span>
-            <Link href="/" className="text-emerald-400 hover:underline">
+            <Link href="/" className="text-[#d97706] hover:underline">
               Home
             </Link>
           </div>
