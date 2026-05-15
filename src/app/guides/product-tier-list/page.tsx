@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Product Tier List | Supermarket Simulator Guide",
   description: "Supermarket Simulator product rankings: S/A/B/C tiers with profit margins, demand data, licensing requirements, and step-by-step stocking strategy.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/product-tier-list/",
+  },
   openGraph: {
+    title: "Product Tier List | Supermarket Simulator Guide",
+    description: "Supermarket Simulator product rankings: S/A/B/C tiers with profit margins, demand data, licensing requirements, and step-by-step stocking strategy.",
+    url: "https://smsimhub.com/guides/product-tier-list/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Product Tier List | Supermarket Simulator Guide",
     description: "Supermarket Simulator product rankings: S/A/B/C tiers with profit margins, demand data, licensing requirements, and step-by-step stocking strategy.",
   },

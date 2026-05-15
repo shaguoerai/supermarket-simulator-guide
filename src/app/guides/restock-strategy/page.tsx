@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Restock Strategy | Supermarket Simulator Guide",
   description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/restock-strategy/",
+  },
   openGraph: {
+    title: "Restock Strategy | Supermarket Simulator Guide",
+    description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
+    url: "https://smsimhub.com/guides/restock-strategy/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Restock Strategy | Supermarket Simulator Guide",
     description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
   },

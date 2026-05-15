@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Interactive Product Tier List | Supermarket Simulator Guide",
   description: "Search and filter all Supermarket Simulator products by tier, category, and profit margin.",
+  alternates: {
+    canonical: "https://smsimhub.com/tier-list/",
+  },
   openGraph: {
+    title: "Interactive Product Tier List | Supermarket Simulator Guide",
+    description: "Search and filter all Supermarket Simulator products by tier, category, and profit margin.",
+    url: "https://smsimhub.com/tier-list/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Interactive Product Tier List | Supermarket Simulator Guide",
     description: "Search and filter all Supermarket Simulator products by tier, category, and profit margin.",
   },

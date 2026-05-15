@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Version Compare & Similar Games | Supermarket Simulator Guide",
   description: "Supermarket Simulator version history, platform differences, and similar games to try.",
+  alternates: {
+    canonical: "https://smsimhub.com/compare/",
+  },
   openGraph: {
+    title: "Version Compare & Similar Games | Supermarket Simulator Guide",
+    description: "Supermarket Simulator version history, platform differences, and similar games to try.",
+    url: "https://smsimhub.com/compare/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Version Compare & Similar Games | Supermarket Simulator Guide",
     description: "Supermarket Simulator version history, platform differences, and similar games to try.",
   },

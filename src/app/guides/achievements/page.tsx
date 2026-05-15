@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Achievements Guide | Supermarket Simulator Guide",
   description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/achievements/",
+  },
   openGraph: {
+    title: "Achievements Guide | Supermarket Simulator Guide",
+    description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
+    url: "https://smsimhub.com/guides/achievements/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Achievements Guide | Supermarket Simulator Guide",
     description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
   },

@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Cheats & Console Commands | Supermarket Simulator Guide",
   description: "All known console commands and cheats for Supermarket Simulator.",
+  alternates: {
+    canonical: "https://smsimhub.com/cheats/",
+  },
   openGraph: {
+    title: "Cheats & Console Commands | Supermarket Simulator Guide",
+    description: "All known console commands and cheats for Supermarket Simulator.",
+    url: "https://smsimhub.com/cheats/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Cheats & Console Commands | Supermarket Simulator Guide",
     description: "All known console commands and cheats for Supermarket Simulator.",
   },

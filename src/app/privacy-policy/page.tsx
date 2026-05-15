@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy | Supermarket Simulator Guide",
   description: "Privacy policy for Supermarket Simulator Guide. Learn what data we collect, how we use it, and your rights.",
+  alternates: {
+    canonical: "https://smsimhub.com/privacy-policy/",
+  },
   openGraph: {
+    title: "Privacy Policy | Supermarket Simulator Guide",
+    description: "Privacy policy for Supermarket Simulator Guide. Learn what data we collect, how we use it, and your rights.",
+    url: "https://smsimhub.com/privacy-policy/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Privacy Policy | Supermarket Simulator Guide",
     description: "Privacy policy for Supermarket Simulator Guide. Learn what data we collect, how we use it, and your rights.",
   },

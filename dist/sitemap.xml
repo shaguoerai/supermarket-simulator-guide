@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://supermarket-simulator-guide.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/beginner-tips/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/money-making/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/product-tier-list/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/staff-management/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/store-layout/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/restock-strategy/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/customer-satisfaction/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/guides/achievements/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/tier-list/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/cheats/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://supermarket-simulator-guide.vercel.app/compare/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://smsimhub.com/guides/beginner-tips/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/money-making/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/product-tier-list/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/staff-management/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/store-layout/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/restock-strategy/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/customer-satisfaction/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/guides/achievements/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/tier-list/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://smsimhub.com/cheats/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/compare/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://smsimhub.com/tools/profit-calculator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

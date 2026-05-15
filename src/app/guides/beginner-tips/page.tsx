@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Beginner Tips | Supermarket Simulator Guide",
   description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/beginner-tips/",
+  },
   openGraph: {
+    title: "Beginner Tips | Supermarket Simulator Guide",
+    description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
+    url: "https://smsimhub.com/guides/beginner-tips/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Beginner Tips | Supermarket Simulator Guide",
     description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
   },

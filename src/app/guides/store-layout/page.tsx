@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Store Layout Guide | Supermarket Simulator Guide",
   description: "Optimal store layouts for Supermarket Simulator: shelf placement, customer flow, and expansion order.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/store-layout/",
+  },
   openGraph: {
+    title: "Store Layout Guide | Supermarket Simulator Guide",
+    description: "Optimal store layouts for Supermarket Simulator: shelf placement, customer flow, and expansion order.",
+    url: "https://smsimhub.com/guides/store-layout/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Store Layout Guide | Supermarket Simulator Guide",
     description: "Optimal store layouts for Supermarket Simulator: shelf placement, customer flow, and expansion order.",
   },

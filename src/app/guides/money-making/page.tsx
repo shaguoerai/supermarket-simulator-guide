@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Money Making Guide | Supermarket Simulator Guide",
   description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/money-making/",
+  },
   openGraph: {
+    title: "Money Making Guide | Supermarket Simulator Guide",
+    description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
+    url: "https://smsimhub.com/guides/money-making/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Money Making Guide | Supermarket Simulator Guide",
     description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
   },

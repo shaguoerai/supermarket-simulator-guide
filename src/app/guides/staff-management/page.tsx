@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Staff Management Guide | Supermarket Simulator Guide",
   description: "Hiring, training, and managing staff in Supermarket Simulator: when to hire, skill priorities, and wage settings.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/staff-management/",
+  },
   openGraph: {
+    title: "Staff Management Guide | Supermarket Simulator Guide",
+    description: "Hiring, training, and managing staff in Supermarket Simulator: when to hire, skill priorities, and wage settings.",
+    url: "https://smsimhub.com/guides/staff-management/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Staff Management Guide | Supermarket Simulator Guide",
     description: "Hiring, training, and managing staff in Supermarket Simulator: when to hire, skill priorities, and wage settings.",
   },

@@ -5,7 +5,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
   description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
+  alternates: {
+    canonical: "https://smsimhub.com/guides/customer-satisfaction/",
+  },
   openGraph: {
+    title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
+    description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
+    url: "https://smsimhub.com/guides/customer-satisfaction/",
+    siteName: "Supermarket Simulator Guide",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
     description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
   },
