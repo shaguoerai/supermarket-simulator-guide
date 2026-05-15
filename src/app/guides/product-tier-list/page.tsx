@@ -23,6 +23,45 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchemaProductTierList = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are produce and baked goods in C-Tier in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They have decent margins (20-30%) but extremely high spoilage rates. Produce expires in 2-3 in-game days and baked goods in 1-2 days. Unless you have a restocker employee and strict ordering discipline, spoilage losses wipe out profits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I ever stock C-Tier items in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but only in late-game stores (15+ shelves) with staff to manage them. Produce and baked goods improve variety scores, which boosts customer satisfaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the single most profitable product in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Electronics (headphones, chargers) have the highest per-unit profit ($15-$25), but alcohol generates the highest daily profit per shelf due to higher turnover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the tier list change in co-op mode in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Co-op mode (up to 4 players) increases customer traffic by 30-50%. High-turnover A-Tier items become even more valuable because you can restock faster with multiple players."
+      }
+    }
+  ]
+};
+
 const tiers = [
   {
     label: "S",
@@ -79,6 +118,10 @@ const tiers = [
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaProductTierList) }}
+      />
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">

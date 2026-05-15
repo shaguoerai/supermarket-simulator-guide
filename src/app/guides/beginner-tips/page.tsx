@@ -23,9 +23,52 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchemaBeginnerTips = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is one in-game day in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One in-game day lasts approximately 15-20 minutes of real time, depending on how efficiently you manage tasks. The day ends when you flip the Closed sign or when the automatic closing time triggers around 10 PM in-game time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play Supermarket Simulator with friends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Supermarket Simulator supports online co-op for up to 4 players. One player hosts the store, and others can join to help with restocking, checkout, and cleaning. Co-op mode shares revenue and expenses equally among all players."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I run out of money in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your balance drops below $0, you cannot place new orders or hire staff. However, you can still sell existing stock. Focus on selling what you have, minimize expenses, and build back to positive cash flow. The game does not have a game over state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I unlock alcohol and tobacco sales in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Purchase the appropriate license from the in-game computer. The alcohol license costs approximately $500-$800 and the tobacco license costs $300-$500. These are among the highest-margin products and pay for themselves within 3-5 days."
+      }
+    }
+  ]
+};
+
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaBeginnerTips) }}
+      />
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">
@@ -225,6 +268,24 @@ export default function Page() {
               <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
                 <p className="text-[#5a6370] text-sm">Place candy and gum on a small shelf next to the checkout. Customers waiting in line often grab these impulse items, adding extra profit with zero effort.</p>
               </div>
+            </div>
+          </section>
+
+          {/* Related Guides */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <Lightbulb className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link href="/guides/money-making/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Learn pricing strategies, high-profit products, and promotional timing to maximize your revenue.</p>
+              </Link>
+              <Link href="/guides/product-tier-list/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
+              </Link>
             </div>
           </section>
 

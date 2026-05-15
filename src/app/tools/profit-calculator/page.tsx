@@ -4,6 +4,21 @@ import { useState, useMemo } from "react";
 import { Calculator, TrendingUp, AlertCircle, CheckCircle2, DollarSign, Package, ArrowLeft, Gamepad2 } from "lucide-react";
 import Link from "next/link";
 
+const softwareSchemaProfitCalc = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Supermarket Simulator Profit Calculator",
+  "applicationCategory": "GameGuide",
+  "operatingSystem": "Web",
+  "description": "Interactive profit calculator for Supermarket Simulator. Select any product, input retail price, and see real-time profit per unit, margin percentage, markup rate, and pricing suggestions.",
+  "url": "https://smsimhub.com/tools/profit-calculator/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+};
+
 interface Product {
   name: string;
   category: string;
@@ -98,6 +113,10 @@ export default function ProfitCalculatorPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchemaProfitCalc) }}
+      />
       {/* Header */}
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
@@ -303,6 +322,20 @@ export default function ProfitCalculatorPage() {
           </div>
         </div>
       </main>
+
+      {/* Related Tool Section */}
+      <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+        <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+          <div className="flex items-center gap-3 mb-2">
+            <TrendingUp className="w-5 h-5 text-[#d97706]" />
+            <h2 className="text-xl font-bold">Related Tool</h2>
+          </div>
+          <Link href="/tier-list/" className="text-[#d97706] hover:underline">
+            <h3 className="font-semibold mb-1">Product Tier List</h3>
+            <p className="text-[#5a6370] text-sm">Browse all products ranked by tier, category, margin, and license requirements.</p>
+          </Link>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">

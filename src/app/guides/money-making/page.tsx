@@ -23,9 +23,60 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchemaMoneyMaking = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the fastest way to make money early game in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focus on snacks and soft drinks with 1.3x-1.5x markup. They have high turnover and require no special equipment or licenses. A single snack shelf can generate $10-$20 daily profit with minimal investment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I buy the freezer or alcohol license first in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Buy the freezer first ($800-$1,200). Frozen foods provide steady daily profit with no ongoing license fees. The alcohol license is next priority once you have $1,500+ in reserve after the freezer purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much daily profit do I need before expanding in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wait until you have $3,000+ in cash reserves and consistent $800+ daily profit. Floor expansions cost $2,000-$5,000, and new shelves need stock. Expanding too early leaves you cash-strapped."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do discounts actually increase total profit in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, during high-traffic periods. A 10% discount that brings 30% more customers typically increases total revenue by 15-20%. The key is timing — only discount when you know foot traffic will be high on weekends and holidays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most profitable store size in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Community data suggests the sweet spot is 12-16 shelves with 3-4 employees. Beyond 20 shelves, management overhead becomes so time-consuming that profit per minute of playtime starts to decline."
+      }
+    }
+  ]
+};
+
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaMoneyMaking) }}
+      />
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">
@@ -246,6 +297,24 @@ export default function Page() {
                 <h3 className="font-semibold text-red-700 mb-1">Mistake #4: Buying Licenses Too Late</h3>
                 <p className="text-[#5a6370] text-sm">Alcohol and tobacco licenses cost $800-$1,300 total but generate $200-$400 extra daily profit once active. Delaying the license purchase by 5 days means losing $1,000-$2,000 in potential revenue. Buy them as soon as you have $1,500 in reserve.</p>
               </div>
+            </div>
+          </section>
+
+          {/* Related Guides */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <TrendingUp className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link href="/tools/profit-calculator/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Profit Calculator</h3>
+                <p className="text-[#5a6370] text-sm">Calculate exact profit margins for any product with suggested pricing ranges.</p>
+              </Link>
+              <Link href="/guides/product-tier-list/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
+              </Link>
             </div>
           </section>
 

@@ -23,9 +23,52 @@ export const metadata: Metadata = {
   },
 };
 
+const faqSchemaCheats = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are there cheat codes for Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Supermarket Simulator does not have traditional cheat codes or a public console command system. The developer, Nokta Games, has not released official cheat commands. Using third-party tools or save-file editing may corrupt your save or trigger anti-cheat measures in online co-op."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I access the developer console in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The game is built on Unreal Engine, which means a developer console exists but is disabled in the retail build. Some players have reported enabling it through Steam launch options (-dev -console), but this is not officially supported and most commands do not affect gameplay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit save files to cheat in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, save files are stored locally and can be edited with a text editor. This is the only reliable way to cheat money or items, but it comes with risks. Save files are typically located at %LOCALAPPDATA%\\SupermarketSimulator\\Saved\\SaveGames\\. Always back up your save file before editing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What money glitches exist in Supermarket Simulator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The community has reported two main money-related behaviors: rapidly changing prices on high-demand items during peak hours can occasionally cause miscalculated revenue, and in online co-op both players grabbing the same box simultaneously has reportedly caused item duplication. These are considered bugs and may result in save corruption."
+      }
+    }
+  ]
+};
+
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaCheats) }}
+      />
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">

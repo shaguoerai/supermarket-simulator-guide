@@ -95,6 +95,20 @@ export default function Page() {
         </div>
       </main>
 
+      {/* Related Guides */}
+      <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+        <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+          <div className="flex items-center gap-3 mb-2">
+            <LayoutGrid className="w-5 h-5 text-[#d97706]" />
+            <h2 className="text-xl font-bold">Related Guide</h2>
+          </div>
+          <Link href="/guides/customer-satisfaction/" className="text-[#d97706] hover:underline">
+            <h3 className="font-semibold mb-1">Customer Satisfaction Guide</h3>
+            <p className="text-[#5a6370] text-sm">Learn how queue management, cleanliness, product variety, and shoplifter handling affect your store's success.</p>
+          </Link>
+        </div>
+      </section>
+
       <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm space-y-3">
           <p>

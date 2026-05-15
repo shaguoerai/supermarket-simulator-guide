@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2, Trophy, Search, Filter } from "lucide-react";
+import { ArrowLeft, Gamepad2, Trophy, Search, Filter, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -21,6 +21,21 @@ export const metadata: Metadata = {
     title: "Interactive Product Tier List | Supermarket Simulator Guide",
     description: "Search and filter all Supermarket Simulator products by tier, category, and profit margin.",
   },
+};
+
+const softwareSchemaTierList = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Supermarket Simulator Product Tier List",
+  "applicationCategory": "GameGuide",
+  "operatingSystem": "Web",
+  "description": "Interactive tier list for Supermarket Simulator products. Browse all products ranked by tier (S/A/B/C), filtered by category, with profit margin and license requirement data.",
+  "url": "https://smsimhub.com/tier-list/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
 };
 
 const products = [
@@ -63,6 +78,10 @@ const tierColors: Record<string, string> = {
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchemaTierList) }}
+      />
       <header className="border-b border-[#e5e7eb] bg-[#f6f8f7]">
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center gap-4">
           <Link href="/" className="inline-flex items-center gap-2 text-[#8a9299] hover:text-[#d97706] transition-colors">
@@ -88,6 +107,18 @@ export default function Page() {
             <Filter className="w-4 h-4" /> Scroll to browse by tier
           </div>
         </div>
+
+        {/* Related Guides */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <TrendingUp className="w-5 h-5 text-[#d97706]" />
+            <h2 className="text-xl font-bold">Related Tool</h2>
+          </div>
+          <Link href="/tools/profit-calculator/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+            <h3 className="font-semibold text-[#d97706] mb-1">Profit Calculator</h3>
+            <p className="text-[#5a6370] text-sm">Calculate exact profit margins for any product with suggested pricing ranges.</p>
+          </Link>
+        </section>
 
         <div className="space-y-6">
           {["S", "A", "B", "C"].map((tier) => (
