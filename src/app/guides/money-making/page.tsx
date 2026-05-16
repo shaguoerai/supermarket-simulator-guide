@@ -315,6 +315,10 @@ export default function Page() {
                 <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
                 <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
               </Link>
+              <Link href="/guides/beginner-tips/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Beginner Tips</h3>
+                <p className="text-[#5a6370] text-sm">Essential tips for new players: first-day checklist, UI overview, and core mechanics.</p>
+              </Link>
             </div>
           </section>
 

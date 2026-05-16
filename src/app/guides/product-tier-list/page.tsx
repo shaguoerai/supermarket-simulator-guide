@@ -312,6 +312,26 @@ export default function Page() {
             <strong className="text-[#181c25]">Note:</strong> Tier rankings reflect general community consensus from Steam forums and Reddit (r/SupermarketSimulator). Your store's optimal mix depends on shelf space, licenses owned, and local customer demographics. Adjust based on your end-of-day sales reports.
           </p>
         </div>
+
+        {/* Related Tools */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <TrendingUp className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Tools</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/tools/profit-calculator/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Profit Calculator</h3>
+                <p className="text-[#5a6370] text-sm">Calculate exact profit margins for any product with real-time pricing analysis.</p>
+              </Link>
+              <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Apply tier list data to build a real profit-making store strategy.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

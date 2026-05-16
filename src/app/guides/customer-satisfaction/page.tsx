@@ -100,6 +100,30 @@ export default function Page() {
             </p>
           </section>
         </div>
+
+        {/* Related Guides */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <Smile className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/guides/store-layout/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Store Layout Guide</h3>
+                <p className="text-[#5a6370] text-sm">Design efficient floor plans that improve customer flow and checkout speed.</p>
+              </Link>
+              <Link href="/guides/staff-management/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Staff Management</h3>
+                <p className="text-[#5a6370] text-sm">Hire and train the right staff to keep your store running smoothly.</p>
+              </Link>
+              <Link href="/guides/product-tier-list/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">Stock the products customers want most: ranked by margin and demand.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

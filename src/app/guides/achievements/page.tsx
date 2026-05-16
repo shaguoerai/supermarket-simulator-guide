@@ -84,6 +84,30 @@ export default function Page() {
             <strong className="text-[#181c25]">Note:</strong> Achievement names and conditions are based on community reports and Steam profile data. Some unlock conditions may have changed with updates. If you find a discrepancy, check the Steam Community Hub for the latest patch notes.
           </p>
         </div>
+
+        {/* Related Guides */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <Trophy className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/guides/beginner-tips/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Beginner Tips</h3>
+                <p className="text-[#5a6370] text-sm">Essential tips to unlock achievements faster with efficient early-game play.</p>
+              </Link>
+              <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Earn $10,000 in a day and unlock the hardest achievements.</p>
+              </Link>
+              <Link href="/guides/staff-management/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Staff Management</h3>
+                <p className="text-[#5a6370] text-sm">Master hiring to unlock staff-related achievements quickly.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

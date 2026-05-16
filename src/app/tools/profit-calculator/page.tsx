@@ -328,12 +328,22 @@ export default function ProfitCalculatorPage() {
         <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
           <div className="flex items-center gap-3 mb-2">
             <TrendingUp className="w-5 h-5 text-[#d97706]" />
-            <h2 className="text-xl font-bold">Related Tool</h2>
+            <h2 className="text-xl font-bold">Related Tools</h2>
           </div>
-          <Link href="/tier-list/" className="text-[#d97706] hover:underline">
-            <h3 className="font-semibold mb-1">Product Tier List</h3>
-            <p className="text-[#5a6370] text-sm">Browse all products ranked by tier, category, margin, and license requirements.</p>
-          </Link>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link href="/tier-list/" className="text-[#d97706] hover:underline block">
+              <h3 className="font-semibold mb-1">Product Tier List</h3>
+              <p className="text-[#5a6370] text-sm">Browse all products ranked by tier, category, margin, and license requirements.</p>
+            </Link>
+            <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+              <h3 className="font-semibold mb-1">Money Making Guide</h3>
+              <p className="text-[#5a6370] text-sm">Best strategies to earn fast: high-margin products, pricing psychology, and more.</p>
+            </Link>
+            <Link href="/guides/beginner-tips/" className="text-[#d97706] hover:underline block">
+              <h3 className="font-semibold mb-1">Beginner Tips</h3>
+              <p className="text-[#5a6370] text-sm">Get started with first-day checklist, pricing basics, and early-game priorities.</p>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

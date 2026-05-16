@@ -286,6 +286,10 @@ export default function Page() {
                 <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
                 <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
               </Link>
+              <Link href="/tools/profit-calculator/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
+                <h3 className="font-semibold text-[#d97706] mb-1">Profit Calculator</h3>
+                <p className="text-[#5a6370] text-sm">Calculate profit margins for any product with suggested retail prices.</p>
+              </Link>
             </div>
           </section>
 

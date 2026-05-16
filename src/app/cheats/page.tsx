@@ -147,6 +147,30 @@ export default function Page() {
             <p className="text-[#8a9299] text-sm mt-3">Always back up your save file before editing. Incorrect edits will corrupt your progress.</p>
           </section>
         </div>
+
+        {/* Related Guides */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <Code className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/guides/beginner-tips/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Beginner Tips</h3>
+                <p className="text-[#5a6370] text-sm">Essential tips to get started: pricing basics, UI overview, and early-game priorities.</p>
+              </Link>
+              <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Legitimate strategies to earn fast without glitches or save editing.</p>
+              </Link>
+              <Link href="/tier-list/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">See every product ranked by profit margin and demand to stock the right items.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

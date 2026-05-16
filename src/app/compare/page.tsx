@@ -138,6 +138,29 @@ export default function Page() {
             </div>
           </section>
         </div>
+        {/* Related Guides */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <GitCompare className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Guides</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/guides/beginner-tips/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Beginner Tips</h3>
+                <p className="text-[#5a6370] text-sm">Start your supermarket journey with essential tips and mechanics overview.</p>
+              </Link>
+              <Link href="/tier-list/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">Browse all products ranked by tier, category, and profit margin.</p>
+              </Link>
+              <Link href="/guides/achievements/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Achievements Guide</h3>
+                <p className="text-[#5a6370] text-sm">Complete achievement list with unlock conditions and tips.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

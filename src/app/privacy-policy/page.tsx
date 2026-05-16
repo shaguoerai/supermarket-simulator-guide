@@ -190,6 +190,29 @@ export default function Page() {
             </div>
           </section>
         </div>
+        {/* Related */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <Gamepad2 className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Explore Guides</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/guides/beginner-tips/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Beginner Tips</h3>
+                <p className="text-[#5a6370] text-sm">Get started with essential tips and first-day checklist.</p>
+              </Link>
+              <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Best strategies to earn fast and grow your store.</p>
+              </Link>
+              <Link href="/tier-list/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Product Tier List</h3>
+                <p className="text-[#5a6370] text-sm">Browse every product ranked by profit margin.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

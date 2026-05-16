@@ -19,11 +19,24 @@ export const metadata: Metadata = {
     siteName: "Supermarket Simulator Guide",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: `${siteUrl}/og-image.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Supermarket Simulator Guide",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Supermarket Simulator Guide | Tips, Tier Lists & Cheats",
     description: "Complete guide for Supermarket Simulator: beginner tips, money making strategies, product tier lists, staff management, cheats, and more.",
+    images: [`${siteUrl}/og-image.svg`],
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
   },
 };
 
@@ -35,6 +48,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-white text-[#181c25]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": `${siteUrl}/guides/beginner-tips/` },
+                { "@type": "ListItem", "position": 3, "name": "Tools", "item": `${siteUrl}/tools/profit-calculator/` },
+              ],
+            }),
+          }}
+        />
         {children}
         <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7] mt-auto">
           <div className="max-w-5xl mx-auto px-4 text-sm text-[#8a9299] space-y-4">

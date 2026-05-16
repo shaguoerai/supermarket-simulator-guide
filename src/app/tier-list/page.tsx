@@ -144,6 +144,25 @@ export default function Page() {
             </section>
           ))}
         </div>
+        {/* Related Tools */}
+        <section className="max-w-4xl mx-auto px-6 mt-2 mb-2 w-full">
+          <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+            <div className="flex items-center gap-3 mb-2">
+              <TrendingUp className="w-5 h-5 text-[#d97706]" />
+              <h2 className="text-xl font-bold">Related Tools</h2>
+            </div>
+            <div className="grid gap-3 md:grid-cols-2">
+              <Link href="/tools/profit-calculator/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Profit Calculator</h3>
+                <p className="text-[#5a6370] text-sm">Calculate exact profit for every product with real-time margin analysis.</p>
+              </Link>
+              <Link href="/guides/money-making/" className="text-[#d97706] hover:underline block">
+                <h3 className="font-semibold mb-1">Money Making Guide</h3>
+                <p className="text-[#5a6370] text-sm">Strategies to maximize revenue using high-margin products and smart pricing.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
