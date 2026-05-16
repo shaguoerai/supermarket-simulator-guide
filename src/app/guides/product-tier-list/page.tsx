@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { ArrowLeft, Gamepad2, Trophy, AlertTriangle, HelpCircle, DollarSign, Package, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import { steamStoreUrl } from "@/lib/steam-affiliate";
+import { SteamAffiliateDisclosure } from "@/components/SteamAffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Product Tier List | Supermarket Simulator Guide",
@@ -139,6 +141,7 @@ export default function Page() {
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Product Tier List</h1>
         <p className="text-[#8a9299] mb-8 text-lg">Ranked by profitability, demand, and ease of management — with data tables and stocking strategy.</p>
+        <SteamAffiliateDisclosure />
 
         <div className="space-y-10">
           <section>
@@ -147,7 +150,8 @@ export default function Page() {
               <h2 className="text-2xl font-bold">How This Tier List Works</h2>
             </div>
             <p className="text-[#5a6370] leading-relaxed mb-4">
-              This tier list ranks products based on three factors: <strong>profit margin</strong> (how much you keep per sale), <strong>demand</strong> (how fast items sell), and <strong>management difficulty</strong> (spoilage risk, license requirements, shelf space needs). A product can have high margins but low demand (electronics) or low margins but massive volume (snacks) — both can be profitable if used correctly.
+              This tier list ranks products based on three factors: <strong>profit margin</strong> (how much you keep per sale), <strong>demand</strong> (how fast items sell), and <strong>management difficulty</strong> (spoilage risk, license requirements, shelf space needs).{" "}
+              <a href={steamStoreUrl()} target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Buy Supermarket Simulator on Steam</a> and use these rankings to stock your store. A product can have high margins but low demand (electronics) or low margins but massive volume (snacks) — both can be profitable if used correctly.
             </p>
             <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
               <p className="text-[#d97706] font-semibold mb-2">Ranking Methodology</p>

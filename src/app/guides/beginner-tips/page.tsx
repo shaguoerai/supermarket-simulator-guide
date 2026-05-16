@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { ArrowLeft, Gamepad2, Lightbulb, MousePointer, ShoppingCart, DollarSign, Users, AlertTriangle, HelpCircle, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { steamStoreUrl } from "@/lib/steam-affiliate";
+import { SteamAffiliateDisclosure } from "@/components/SteamAffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Beginner Tips | Supermarket Simulator Guide",
@@ -94,8 +96,10 @@ export default function Page() {
               <h2 className="text-2xl font-bold">Understanding the Basics</h2>
             </div>
             <p className="text-[#5a6370] leading-relaxed mb-4">
-              Supermarket Simulator by Nokta Games puts you in charge of a small grocery store. Your goal is simple: buy low, sell high, keep shelves stocked, and grow from a tiny corner shop into a retail empire. The game features both single-player and online co-op modes (up to 4 players), with Steam Cloud saves so you never lose progress.
+              Supermarket Simulator by Nokta Games puts you in charge of a small grocery store. Your goal is simple: buy low, sell high, keep shelves stocked, and grow from a tiny corner shop into a retail empire.{" "}
+              <a href={steamStoreUrl()} target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Get Supermarket Simulator on Steam</a> and start building your store today. The game features both single-player and online co-op modes (up to 4 players), with Steam Cloud saves so you never lose progress.
             </p>
+            <SteamAffiliateDisclosure />
             <p className="text-[#5a6370] leading-relaxed mb-4">
               You interact with almost everything directly — grab boxes from delivery pallets, physically place items on shelves, operate the checkout register, and even chase down shoplifters. There is no traditional pause button; time keeps moving while you manage your store. One in-game day typically lasts 15-20 minutes of real time, depending on how efficiently you work.
             </p>

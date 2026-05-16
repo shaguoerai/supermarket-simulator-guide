@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { ArrowLeft, Gamepad2, Code, Terminal, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { steamStoreUrl } from "@/lib/steam-affiliate";
+import { SteamAffiliateDisclosure } from "@/components/SteamAffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Cheats & Console Commands | Supermarket Simulator Guide",
@@ -86,13 +88,15 @@ export default function Page() {
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Cheats & Console Commands</h1>
         <p className="text-[#8a9299] mb-8 text-lg">Developer console commands and known workarounds.</p>
+        <SteamAffiliateDisclosure />
 
         <div className="p-4 rounded-sm bg-amber-500/10 border border-amber-500/20 mb-8">
           <div className="flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5" />
             <div>
               <p className="text-amber-400 font-semibold mb-1">Important Notice</p>
-              <p className="text-[#5a6370] text-sm">Supermarket Simulator does not have traditional cheat codes or a public console command system as of the latest update. The developer, Nokta Games, has not released official cheat commands. Using third-party tools or save-file editing may corrupt your save or trigger anti-cheat measures in online co-op.</p>
+              <p className="text-[#5a6370] text-sm">Supermarket Simulator does not have traditional cheat codes or a public console command system as of the latest update. The developer, Nokta Games, has not released official cheat commands.{" "}
+                <a href={steamStoreUrl()} target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Buy the game on Steam</a> to check for the latest updates. Using third-party tools or save-file editing may corrupt your save or trigger anti-cheat measures in online co-op.</p>
             </div>
           </div>
         </div>
