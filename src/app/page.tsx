@@ -268,41 +268,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-[#e5e7eb] py-8 bg-white mt-auto">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm font-semibold">
-              <Gamepad2 className="w-4 h-4 text-[#d97706]" />
-              Supermarket Simulator Guide
-            </div>
-            <p className="text-[#8a9299] text-sm">
-              Unofficial fan site. Not affiliated with the game developer.
-            </p>
-          </div>
-          <div className="mt-4 pt-4 border-t border-[#e5e7eb] flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-sm text-[#8a9299]">
-            <div>
-              <p>
-                All game content, names, and trademarks are property of their respective owners.
-                This site is for informational purposes only.
-              </p>
-              <p className="mt-2 text-xs">
-                As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases made through product links on this site.
-              </p>
-            </div>
-            <div className="flex items-center gap-4 shrink-0">
-              <Link href="/privacy-policy/" className="text-[#2563eb] hover:text-[#1d4ed8] hover:underline">
-                Privacy Policy
-              </Link>
-              <span>·</span>
-              <Link href="/" className="text-[#2563eb] hover:text-[#1d4ed8] hover:underline">
-                Home
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

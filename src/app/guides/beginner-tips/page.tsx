@@ -319,30 +319,6 @@ export default function Page() {
           </section>
         </div>
       </main>
-
-      <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
-        <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm space-y-3">
-          <p>
-            Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
-          </p>
-          <p>
-            All game content, names, and trademarks are property of their respective owners.
-            This site is for informational purposes only. Information may not be 100% accurate or up-to-date.
-          </p>
-          <p className="text-xs">
-            As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases made through product links on this site.
-          </p>
-          <div className="flex items-center justify-center gap-4 pt-2">
-            <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">
-              Privacy Policy
-            </Link>
-            <span>·</span>
-            <Link href="/" className="text-[#d97706] hover:underline">
-              Home
-            </Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -72,6 +72,7 @@ export default function Page() {
               <li><strong>Advertising Personalization:</strong> To display relevant ads through Google AdSense.</li>
               <li><strong>Site Performance:</strong> To monitor and optimize website speed and reliability.</li>
               <li><strong>Security:</strong> To detect and prevent abuse or unauthorized access.</li>
+              <li><strong>Affiliate Marketing:</strong> To earn commission income through affiliate marketing programs.</li>
             </ul>
           </section>
 
@@ -190,22 +191,6 @@ export default function Page() {
           </section>
         </div>
       </main>
-
-      <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
-        <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm">
-          <p className="mb-2">
-            Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
-          </p>
-          <p className="mb-2 text-xs">
-            As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases made through product links on this site.
-          </p>
-          <p>
-            <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">Privacy Policy</Link>
-            {" · "}
-            <Link href="/" className="text-[#d97706] hover:underline">Home</Link>
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
