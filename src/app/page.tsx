@@ -32,9 +32,22 @@ const tools = [
   { href: "/compare/", title: "Version Compare", desc: "Compare versions and similar store sim games.", icon: GitCompare },
 ];
 
+const siteUrl = "https://smsimhub.com";
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-[#181c25]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Supermarket Simulator Guide",
+            "url": siteUrl,
+          }),
+        }}
+      />
       {/* Navbar */}
       <nav className="border-b border-[#e5e7eb] bg-white sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">

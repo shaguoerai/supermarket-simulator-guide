@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: `${siteUrl}/og-image.svg`,
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Supermarket Simulator Guide",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Supermarket Simulator Guide | Tips, Tier Lists & Cheats",
     description: "Complete guide for Supermarket Simulator: beginner tips, money making strategies, product tier lists, staff management, cheats, and more.",
-    images: [`${siteUrl}/og-image.svg`],
+    images: [`${siteUrl}/og-image.png`],
   },
   other: {
     "og:image:width": "1200",
