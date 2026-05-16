@@ -45,7 +45,7 @@ export default function Page() {
           <h1 className="text-3xl md:text-4xl font-bold">Privacy Policy</h1>
         </div>
         <p className="text-[#8a9299] mb-10 text-lg">
-          Last updated: May 15, 2026. This policy explains how we collect, use, and protect your information.
+          Last updated: May 16, 2026. This policy explains how we collect, use, and protect your information.
         </p>
 
         <div className="space-y-10">
@@ -94,6 +94,20 @@ export default function Page() {
                   <h3 className="font-semibold">Google AdSense</h3>
                 </div>
                 <p className="text-[#8a9299] text-sm">Displays personalized advertisements. Uses cookies to serve ads based on your interests.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <div className="flex items-center gap-2 mb-1">
+                  <ExternalLink className="w-4 h-4 text-[#d97706]" />
+                  <h3 className="font-semibold">Steam Affiliate Program</h3>
+                </div>
+                <p className="text-[#8a9299] text-sm">Game links on this site may be Steam affiliate links. We earn a commission if you purchase through these links. Steam uses cookies to track referrals.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <div className="flex items-center gap-2 mb-1">
+                  <ExternalLink className="w-4 h-4 text-[#d97706]" />
+                  <h3 className="font-semibold">Amazon Associate Program</h3>
+                </div>
+                <p className="text-[#8a9299] text-sm">We participate in the Amazon Services LLC Associates Program. Product links may earn advertising fees. Amazon uses cookies to track referrals.</p>
               </div>
             </div>
           </section>
@@ -181,6 +195,9 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm">
           <p className="mb-2">
             Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
+          </p>
+          <p className="mb-2 text-xs">
+            As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases made through product links on this site.
           </p>
           <p>
             <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">Privacy Policy</Link>

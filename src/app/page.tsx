@@ -282,10 +282,15 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-4 pt-4 border-t border-[#e5e7eb] flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-sm text-[#8a9299]">
-            <p>
-              All game content, names, and trademarks are property of their respective owners.
-              This site is for informational purposes only.
-            </p>
+            <div>
+              <p>
+                All game content, names, and trademarks are property of their respective owners.
+                This site is for informational purposes only.
+              </p>
+              <p className="mt-2 text-xs">
+                As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases made through product links on this site.
+              </p>
+            </div>
             <div className="flex items-center gap-4 shrink-0">
               <Link href="/privacy-policy/" className="text-[#2563eb] hover:text-[#1d4ed8] hover:underline">
                 Privacy Policy
