@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Beginner Tips | Supermarket Simulator Guide",
     description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

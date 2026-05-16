@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Store Layout Guide | Supermarket Simulator Guide",
-    description: "Optimal store layouts for Supermarket Simulator: shelf placement, customer flow, and expansion order.",
+    description: "Optimal store layout guide for Supermarket Simulator: floor plans, shelf placement, checkout positioning, and customer flow optimization.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

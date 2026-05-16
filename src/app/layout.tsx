@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     images: [`${siteUrl}/og-image.png`],
   },
   other: {
+    "og:image": `${siteUrl}/og-image.png`,
     "og:image:width": "1200",
     "og:image:height": "630",
   },

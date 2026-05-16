@@ -18,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Restock Strategy | Supermarket Simulator Guide",
-    description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
+    title: "Restock Strategy Guide | Supermarket Simulator Guide",
+    description: "Optimal restock strategy guide for Supermarket Simulator: when and what to restock, avoid overstocking and stockout losses, and inventory management tips.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

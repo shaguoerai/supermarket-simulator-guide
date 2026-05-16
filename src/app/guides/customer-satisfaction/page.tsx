@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
-    description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
+    description: "How to keep customers happy in Supermarket Simulator: cleanliness, pricing, wait times, product variety, and store atmosphere explained.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cheats & Console Commands | Supermarket Simulator Guide",
     description: "All known console commands and cheats for Supermarket Simulator.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

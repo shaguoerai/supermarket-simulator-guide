@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Version Compare & Similar Games | Supermarket Simulator Guide",
     description: "Supermarket Simulator version history, platform differences, and similar games to try.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

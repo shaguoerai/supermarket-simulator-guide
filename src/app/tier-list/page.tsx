@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Interactive Product Tier List | Supermarket Simulator Guide",
     description: "Search and filter all Supermarket Simulator products by tier, category, and profit margin.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

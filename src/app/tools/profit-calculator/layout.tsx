@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Profit Calculator | Supermarket Simulator Guide",
     description: "Calculate profit, margin, and optimal pricing for any product in Supermarket Simulator. 26 products with wholesale costs built in. Free interactive tool.",
+    images: [`${siteUrl}/og-image.png`],
   },
 };
 

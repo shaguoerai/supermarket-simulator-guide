@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | Supermarket Simulator Guide",
-    description: "Privacy policy for Supermarket Simulator Guide. Learn what data we collect, how we use it, and your rights.",
+    description: "Privacy policy for Supermarket Simulator Guide — a fan guide website for Supermarket Simulator by Nokta Games.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

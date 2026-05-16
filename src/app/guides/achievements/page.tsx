@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Achievements Guide | Supermarket Simulator Guide",
-    description: "Complete Supermarket Simulator achievements list with unlock conditions and tips.",
+    description: "Complete achievement list for Supermarket Simulator: unlock conditions, step-by-step guides for every achievement, and reward details.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

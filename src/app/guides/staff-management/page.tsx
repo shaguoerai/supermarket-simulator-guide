@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Staff Management Guide | Supermarket Simulator Guide",
-    description: "Hiring, training, and managing staff in Supermarket Simulator: when to hire, skill priorities, and wage settings.",
+    description: "Complete staff management guide for Supermarket Simulator: hiring thresholds, role assignments, salary management, and employee satisfaction tips.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

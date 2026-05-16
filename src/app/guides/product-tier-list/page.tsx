@@ -18,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Product Tier List | Supermarket Simulator Guide",
-    description: "Supermarket Simulator product rankings: S/A/B/C tiers with profit margins, demand data, licensing requirements, and step-by-step stocking strategy.",
+    title: "Product Tier List Guide | Supermarket Simulator Guide",
+    description: "Complete product tier list for Supermarket Simulator: every product ranked by profitability, sell-through rate, and shelf space efficiency with detailed analysis.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 

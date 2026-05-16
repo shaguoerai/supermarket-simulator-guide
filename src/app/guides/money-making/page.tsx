@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Money Making Guide | Supermarket Simulator Guide",
     description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
+    images: ["https://smsimhub.com/og-image.png"],
   },
 };
 
