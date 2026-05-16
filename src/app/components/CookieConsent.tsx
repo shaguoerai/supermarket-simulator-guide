@@ -48,7 +48,7 @@ export default function CookieConsent() {
                 <div>
                   <h3 className="font-semibold text-zinc-100 mb-1">Cookie Consent</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    We use cookies to improve your experience, serve personalized ads through Google AdSense, and track affiliate referrals (Steam, Amazon).
+                    We use cookies to improve your experience and serve personalized ads through Google AdSense.
                     You can choose to accept or decline non-essential cookies. The site remains fully functional either way.
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function CookieConsent() {
                     <span className="text-xs text-zinc-500">Optional</span>
                   </div>
                   <p className="text-zinc-400 text-xs">
-                    Used by Google Analytics, Google AdSense, and affiliate programs (Steam, Amazon) to track usage, show personalized ads, and attribute referrals.
+                    Used by Google Analytics, Google AdSense, and our Amazon Associate program to track usage, show personalized ads, and attribute referrals.
                   </p>
                 </div>
               )}

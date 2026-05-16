@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { ArrowLeft, Gamepad2, TrendingUp, Tag, Package, Calendar, AlertTriangle, HelpCircle, DollarSign } from "lucide-react";
 import Link from "next/link";
-import { steamStoreUrl } from "@/lib/steam-affiliate";
-import { SteamAffiliateDisclosure } from "@/components/SteamAffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Money Making Guide | Supermarket Simulator Guide",
@@ -96,7 +94,6 @@ export default function Page() {
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Money Making Guide</h1>
         <p className="text-[#8a9299] mb-8 text-lg">Legit strategies to maximize profit and grow your store fast — with pricing data, profit margins, and step-by-step execution.</p>
-        <SteamAffiliateDisclosure />
 
         <div className="space-y-10">
           <section>
@@ -106,7 +103,7 @@ export default function Page() {
             </div>
             <p className="text-[#5a6370] leading-relaxed mb-4">
               The core of making money in Supermarket Simulator is markup discipline. Every product has a wholesale cost and a retail price you set.{" "}
-              <a href={steamStoreUrl()} target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Play Supermarket Simulator on Steam</a> to put these strategies into practice. The community consensus from Reddit and Steam forums is that a <strong>1.25x to 1.5x markup</strong> works best for most items. Go higher and you risk driving customers away; go lower and you leave profit on the table.
+              <a href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Play Supermarket Simulator on Steam</a> to put these strategies into practice. The community consensus from Reddit and Steam forums is that a <strong>1.25x to 1.5x markup</strong> works best for most items. Go higher and you risk driving customers away; go lower and you leave profit on the table.
             </p>
             <p className="text-[#5a6370] leading-relaxed mb-4">
               Luxury and electronics can handle higher markups (1.8x to 2.2x) because customers expect to pay more. Essentials like bread, milk, and eggs should stay closer to 1.2x — customers are price-sensitive on daily necessities. Here is a detailed breakdown based on community-tested data:

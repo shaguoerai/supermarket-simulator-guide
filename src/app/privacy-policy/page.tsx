@@ -73,7 +73,7 @@ export default function Page() {
               <li><strong>Advertising Personalization:</strong> To display relevant ads through Google AdSense.</li>
               <li><strong>Site Performance:</strong> To monitor and optimize website speed and reliability.</li>
               <li><strong>Security:</strong> To detect and prevent abuse or unauthorized access.</li>
-              <li><strong>Affiliate Marketing:</strong> To earn commission income through affiliate marketing programs.</li>
+              <li><strong>Affiliate Marketing:</strong> To earn commission income through our Amazon Associate program.</li>
             </ul>
           </section>
 
@@ -96,13 +96,6 @@ export default function Page() {
                   <h3 className="font-semibold">Google AdSense</h3>
                 </div>
                 <p className="text-[#8a9299] text-sm">Displays personalized advertisements. Uses cookies to serve ads based on your interests.</p>
-              </div>
-              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
-                <div className="flex items-center gap-2 mb-1">
-                  <ExternalLink className="w-4 h-4 text-[#d97706]" />
-                  <h3 className="font-semibold">Steam Affiliate Program</h3>
-                </div>
-                <p className="text-[#8a9299] text-sm">Game links on this site may be Steam affiliate links. We earn a commission if you purchase through these links. Steam uses cookies to track referrals.</p>
               </div>
               <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
                 <div className="flex items-center gap-2 mb-1">

@@ -77,7 +77,7 @@ export default function RootLayout({
                   This site is for informational purposes only.
                 </p>
                 <p className="text-xs leading-relaxed">
-                  Supermarket Simulator Guide is a participant in the Steam Affiliate Program and Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to store.steampowered.com and amazon.com. As an Amazon Associate and Steam Affiliate, we earn from qualifying purchases.
+                  Supermarket Simulator Guide is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com. As an Amazon Associate, we earn from qualifying purchases.
                 </p>
               </div>
               <div className="flex items-center gap-4 shrink-0">

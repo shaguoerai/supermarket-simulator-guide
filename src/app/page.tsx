@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { Gamepad2, BookOpen, Trophy, Code, GitCompare, ArrowRight, Sparkles, Clock, Star, Zap, TrendingUp, Calculator } from "lucide-react";
 import Link from "next/link";
-import { steamStoreUrl } from "@/lib/steam-affiliate";
-import { SteamAffiliateDisclosure } from "@/components/SteamAffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Supermarket Simulator Guide | Tips, Tier Lists & Cheats",
@@ -85,10 +83,9 @@ export default function Home() {
           </h1>
           <p className="text-[#c8cdd5] text-base md:text-lg max-w-2xl leading-relaxed">
             Complete guides, tier lists, cheats, and strategies to master{" "}
-            <a href={steamStoreUrl()} target="_blank" rel="noopener noreferrer" className="text-[#fcd34d] hover:underline">Supermarket Simulator on Steam</a>.
+            <a href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#fcd34d] hover:underline">Supermarket Simulator on Steam</a>.
             Build your retail empire with expert tips from the community.
           </p>
-          <SteamAffiliateDisclosure />
         </div>
       </header>
 
