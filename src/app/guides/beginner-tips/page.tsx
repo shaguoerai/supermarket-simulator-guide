@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2, Lightbulb, MousePointer, ShoppingCart, DollarSign, Users, AlertTriangle, HelpCircle, CheckCircle } from "lucide-react";
+import { ArrowLeft, Gamepad2, Lightbulb, MousePointer, ShoppingCart, DollarSign, Users, AlertTriangle, HelpCircle, CheckCircle, Wrench } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Beginner Tips | Supermarket Simulator Guide",
-  description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
+  description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides. Updated for Patch 1.3.1.",
   alternates: {
     canonical: "https://smsimhub.com/guides/beginner-tips/",
   },
   openGraph: {
     title: "Beginner Tips | Supermarket Simulator Guide",
-    description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
+    description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides. Updated for Patch 1.3.1.",
     url: "https://smsimhub.com/guides/beginner-tips/",
     siteName: "Supermarket Simulator Guide",
     type: "website",
@@ -19,8 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Beginner Tips | Supermarket Simulator Guide",
-    description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides.",
-    images: ["https://smsimhub.com/og-image.png"],
+    description: "Essential beginner tips for Supermarket Simulator: first-day checklist, UI overview, pricing data, and core mechanics explained with step-by-step guides. Updated for Patch 1.3.1.",
   },
 };
 
@@ -84,8 +83,14 @@ export default function Page() {
       </header>
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Beginner Tips</h1>
-        <p className="text-[#8a9299] mb-8 text-lg">Everything you need to survive your first week running a supermarket — with data, step-by-step checklists, and community-tested strategies.</p>
+        <h1 className="text-3xl md:text-4xl font-bold mb-2">Beginner Tips</h1>
+        <p className="text-[#8a9299] text-sm mb-4">Updated: May 2026 — Patch 1.3.1</p>
+        <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] mb-8">
+          <p className="text-[#d97706] font-semibold mb-2">Best answer</p>
+          <p className="text-[#5a6370] text-sm leading-relaxed">
+            <strong>Supermarket Simulator beginners should focus on three things on day one:</strong> unpack deliveries immediately, set prices at 1.2x–1.3x for essentials (bread, milk, eggs) and 1.4x–1.5x for snacks/drinks, and always stay at the register during peak hours. Customers abandon carts if they wait too long at checkout. Most players earn <strong>$150–$400 profit on day one</strong> if they follow this sequence. Avoid overpricing everything — customer count matters more than margin early on.
+          </p>
+        </div>
 
         <div className="space-y-10">
           <section>
@@ -94,8 +99,7 @@ export default function Page() {
               <h2 className="text-2xl font-bold">Understanding the Basics</h2>
             </div>
             <p className="text-[#5a6370] leading-relaxed mb-4">
-              Supermarket Simulator by Nokta Games puts you in charge of a small grocery store. Your goal is simple: buy low, sell high, keep shelves stocked, and grow from a tiny corner shop into a retail empire.{" "}
-              <a href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Get Supermarket Simulator on Steam</a> and start building your store today. The game features both single-player and online co-op modes (up to 4 players), with Steam Cloud saves so you never lose progress.
+              Supermarket Simulator by Nokta Games puts you in charge of a small grocery store. Your goal is simple: buy low, sell high, keep shelves stocked, and grow from a tiny corner shop into a retail empire. The game features both single-player and online co-op modes (up to 4 players), with Steam Cloud saves so you never lose progress.
             </p>
             <p className="text-[#5a6370] leading-relaxed mb-4">
               You interact with almost everything directly — grab boxes from delivery pallets, physically place items on shelves, operate the checkout register, and even chase down shoplifters. There is no traditional pause button; time keeps moving while you manage your store. One in-game day typically lasts 15-20 minutes of real time, depending on how efficiently you work.
@@ -109,6 +113,9 @@ export default function Page() {
                 <li>• <strong>Customers:</strong> Dynamic AI with patience meters, price sensitivity, and shopping lists.</li>
                 <li>• <strong>Staff:</strong> Hire cashiers, restockers, security, and cleaners as you grow.</li>
               </ul>
+              <p className="mt-3 text-[#5a6370] text-sm">
+                <a href="https://store.steampowered.com/app/2945440/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline font-medium">Buy Supermarket Simulator on Steam →</a>
+              </p>
             </div>
           </section>
 
@@ -219,6 +226,38 @@ export default function Page() {
 
           <section>
             <div className="flex items-center gap-3 mb-4">
+              <Wrench className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">What Changed in Patch 1.3.1 (May 22, 2026)</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Steam Patch 1.3.1 fixed several issues that directly affect new players. If you are starting fresh or returning after a break, here is what matters:
+            </p>
+            <div className="space-y-4">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Loan Early Payoff Now Includes Remaining Installments</h3>
+                <p className="text-[#5a6370] text-sm">Official docs state that paying off a loan early now correctly includes all remaining installments in the total. Before this patch, some players reported that early payoff did not account for future interest, leading to confusion about the true cost. If you took a starter loan, check your computer's finance tab — the payoff amount should now match the sum of all remaining payments.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Security Antenna Placement Fix</h3>
+                <p className="text-[#5a6370] text-sm">Community reports suggest that security antennas (used to detect shoplifters) previously had inconsistent hit detection depending on where they were placed. Patch 1.3.1 fixed this. For beginners, this means you can place antennas near the entrance without worrying about dead zones. Place one antenna on each side of the main door, roughly 2-3 tiles from the frame.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Furniture Color Dropdown Fix</h3>
+                <p className="text-[#5a6370] text-sm">The furniture color selector in the decoration menu now works reliably. If you bought shelves or counters and the color did not change in previous versions, retry after the patch. This is cosmetic only, but it helps with store organization — for example, using red shelves for alcohol and blue shelves for frozen goods to speed up restocking visually.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">NPC Vending Machine Fix</h3>
+                <p className="text-[#5a6370] text-sm">Community reports suggest that NPCs previously got stuck or behaved incorrectly near vending machines. After Patch 1.3.1, customer pathing around vending machines should be smoother. If you place a vending machine near the entrance, customers are less likely to block the doorway.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Gamepad UI Fixes</h3>
+                <p className="text-[#5a6370] text-sm">If you play with a controller, menu navigation and inventory scrolling should now be more responsive. Official docs state that several UI focus issues were resolved, particularly in the staff management and ordering screens.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
               <AlertTriangle className="w-6 h-6 text-[#d97706]" />
               <h2 className="text-2xl font-bold">Common Beginner Mistakes to Avoid</h2>
             </div>
@@ -288,10 +327,6 @@ export default function Page() {
                 <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
                 <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
               </Link>
-              <Link href="/tools/profit-calculator/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
-                <h3 className="font-semibold text-[#d97706] mb-1">Profit Calculator</h3>
-                <p className="text-[#5a6370] text-sm">Calculate profit margins for any product with suggested retail prices.</p>
-              </Link>
             </div>
           </section>
 
@@ -323,8 +358,55 @@ export default function Page() {
               </div>
             </div>
           </section>
+
+          {/* GEO FAQs */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <HelpCircle className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Quick Answers</h2>
+            </div>
+            <div className="space-y-4">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">What is the best price markup for beginners?</h3>
+                <p className="text-[#5a6370] text-sm">Set markup at 1.2x–1.3x for essentials (bread, milk, eggs) and 1.4x–1.5x for snacks and soft drinks. Alcohol and electronics can go up to 1.8x–2.2x. Watch customer feedback bubbles — green means good, red means overpriced.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">What beginner mistake should I avoid?</h3>
+                <p className="text-[#5a6370] text-sm">The most common beginner mistake is overpricing everything on day one. This scares customers away and reduces foot traffic. Other mistakes: buying too many perishables, hiring staff before you can afford their salary, ignoring spills that lower satisfaction, and expanding the store before daily profit is stable.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">How do I make money fast as a beginner?</h3>
+                <p className="text-[#5a6370] text-sm">Focus on high-turnover items like snacks and soft drinks first. These sell 15–25 units per shelf per day. Keep shelves fully stocked — empty shelves mean zero sales. Don't buy alcohol or electronics licenses on day one; wait until you have steady $500+ daily profit.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">When should I hire my first employee?</h3>
+                <p className="text-[#5a6370] text-sm">Hire your first cashier when daily profit reaches $500+ consistently and you're spending more than 50% of your time at checkout. A cashier costs roughly $80–$120 per day. The right time is usually around day 5–7 for most players.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
+
+      <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
+        <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm space-y-3">
+          <p>
+            Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
+          </p>
+          <p>
+            All game content, names, and trademarks are property of their respective owners.
+            This site is for informational purposes only. Information may not be 100% accurate or up-to-date.
+          </p>
+          <div className="flex items-center justify-center gap-4 pt-2">
+            <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">
+              Privacy Policy
+            </Link>
+            <span>·</span>
+            <Link href="/" className="text-[#d97706] hover:underline">
+              Home
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

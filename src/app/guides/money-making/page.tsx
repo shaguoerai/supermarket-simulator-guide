@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2, TrendingUp, Tag, Package, Calendar, AlertTriangle, HelpCircle, DollarSign } from "lucide-react";
+import { ArrowLeft, Gamepad2, TrendingUp, Tag, Package, Calendar, AlertTriangle, HelpCircle, DollarSign, Wrench, PiggyBank } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Money Making Guide | Supermarket Simulator Guide",
-  description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
+  description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, loan management, and waste minimization with step-by-step guides. Updated for Patch 1.3.1.",
   alternates: {
     canonical: "https://smsimhub.com/guides/money-making/",
   },
   openGraph: {
     title: "Money Making Guide | Supermarket Simulator Guide",
-    description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
+    description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, loan management, and waste minimization with step-by-step guides. Updated for Patch 1.3.1.",
     url: "https://smsimhub.com/guides/money-making/",
     siteName: "Supermarket Simulator Guide",
     type: "website",
@@ -19,8 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Money Making Guide | Supermarket Simulator Guide",
-    description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, and waste minimization with step-by-step guides.",
-    images: ["https://smsimhub.com/og-image.png"],
+    description: "Best money-making strategies for Supermarket Simulator: pricing tables, high-profit items, promotional timing, loan management, and waste minimization with step-by-step guides. Updated for Patch 1.3.1.",
   },
 };
 
@@ -92,8 +91,14 @@ export default function Page() {
       </header>
 
       <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Money Making Guide</h1>
-        <p className="text-[#8a9299] mb-8 text-lg">Legit strategies to maximize profit and grow your store fast — with pricing data, profit margins, and step-by-step execution.</p>
+        <h1 className="text-3xl md:text-4xl font-bold mb-2">Money Making Guide</h1>
+        <p className="text-[#8a9299] text-sm mb-4">Updated: May 2026 — Patch 1.3.1</p>
+        <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] mb-8">
+          <p className="text-[#d97706] font-semibold mb-2">Best answer</p>
+          <p className="text-[#5a6370] text-sm leading-relaxed">
+            <strong>To maximize profit in Supermarket Simulator:</strong> apply tiered markup strategies by product category, minimize waste from spoilage by ordering conservatively, and invest in high-return licenses (alcohol at $500–$800, tobacco at $300–$500) once daily profit stabilizes above $500. The most profitable categories are electronics ($15–$25 profit per unit) and alcohol (50–60% margin), while the highest total revenue comes from high-turnover snacks and soft drinks. On rainy days, raise prices 5–10% — customers are less price-sensitive in bad weather.
+          </p>
+        </div>
 
         <div className="space-y-10">
           <section>
@@ -102,8 +107,7 @@ export default function Page() {
               <h2 className="text-2xl font-bold">Pricing Strategy That Works</h2>
             </div>
             <p className="text-[#5a6370] leading-relaxed mb-4">
-              The core of making money in Supermarket Simulator is markup discipline. Every product has a wholesale cost and a retail price you set.{" "}
-              <a href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline">Play Supermarket Simulator on Steam</a> to put these strategies into practice. The community consensus from Reddit and Steam forums is that a <strong>1.25x to 1.5x markup</strong> works best for most items. Go higher and you risk driving customers away; go lower and you leave profit on the table.
+              The core of making money in Supermarket Simulator is markup discipline. Every product has a wholesale cost and a retail price you set. The community consensus from Reddit and Steam forums is that a <strong>1.25x to 1.5x markup</strong> works best for most items. Go higher and you risk driving customers away; go lower and you leave profit on the table.
             </p>
             <p className="text-[#5a6370] leading-relaxed mb-4">
               Luxury and electronics can handle higher markups (1.8x to 2.2x) because customers expect to pay more. Essentials like bread, milk, and eggs should stay closer to 1.2x — customers are price-sensitive on daily necessities. Here is a detailed breakdown based on community-tested data:
@@ -168,6 +172,9 @@ export default function Page() {
               <p className="text-[#d97706] font-semibold mb-2">Pro Tip</p>
               <p className="text-[#5a6370] text-sm">Use the pricing gun to batch-update prices during slow hours (early morning, 6-8 AM in-game). Changing prices while customers are shopping causes frustration and lost sales. A single price change takes 2-3 seconds per shelf — plan accordingly.</p>
             </div>
+            <p className="text-[#5a6370] text-sm mt-3">
+              <a href="https://store.steampowered.com/app/2945440/Supermarket_Simulator/" target="_blank" rel="noopener noreferrer" className="text-[#d97706] hover:underline font-medium">Get Supermarket Simulator on Steam →</a>
+            </p>
           </section>
 
           <section>
@@ -255,6 +262,30 @@ export default function Page() {
 
           <section>
             <div className="flex items-center gap-3 mb-4">
+              <PiggyBank className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Loan Management: When to Borrow and When to Pay Off</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Loans in Supermarket Simulator let you accelerate growth, but they are a double-edged sword. The starter loan typically has daily installments that eat into your cash flow. Here is how to handle debt without bleeding your store dry.
+            </p>
+            <div className="space-y-4">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Scenario: Should I Take the Starter Loan?</h3>
+                <p className="text-[#5a6370] text-sm">If you start with $2,000 and the loan gives you an extra $3,000, you can buy a freezer and alcohol license immediately. The math: freezer ($1,000) + alcohol license ($600) + initial stock ($400) = $2,000 investment. Frozen pizza and alcohol generate roughly $80-$150 extra daily profit. If the loan costs $40/day in installments, you net $40-$110/day extra. Community reports suggest this is worth it if you can keep shelves stocked — but if you struggle with restocking, the loan just adds pressure.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Patch 1.3.1: Early Payoff Now Includes Remaining Installments</h3>
+                <p className="text-[#5a6370] text-sm">Official docs state that paying off a loan early now correctly includes all remaining installments in the total payoff amount. Before this patch, some players reported confusion because early payoff did not reflect future interest. After Patch 1.3.1, open your computer, go to Finance → Loans, and the "Pay Off Early" button shows the exact sum of all remaining payments. This makes it easier to decide whether to clear debt early or keep cash for inventory.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Rule of Thumb for Payoff Timing</h3>
+                <p className="text-[#5a6370] text-sm">Pay off the loan early only if you have $2,000+ in reserve after the payoff. Do not zero out your cash — you need a buffer for orders. If your daily profit is $600+ and the loan costs $50/day, keeping the loan is fine. If daily profit is $300 and the loan costs $50/day, that is 17% of your profit going to interest. Pay it off as soon as you have the buffer.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
               <Package className="w-6 h-6 text-[#d97706]" />
               <h2 className="text-2xl font-bold">Minimize Waste: The Silent Profit Killer</h2>
             </div>
@@ -273,6 +304,30 @@ export default function Page() {
               <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
                 <h3 className="font-semibold text-[#d97706] mb-1">Step 3: Discount Before Spoilage</h3>
                 <p className="text-[#5a6370] text-sm">If you notice perishables approaching their expiration date, discount them 20-30% to move inventory fast. Recovering 70% of your cost is far better than losing 100% to spoilage.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <Wrench className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Patch 1.3.1 Money-Making Changes</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Patch 1.3.1 (May 22, 2026) introduced several fixes that indirectly affect your bottom line. Here is what to know:
+            </p>
+            <div className="space-y-4">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Security Antenna Placement Fix</h3>
+                <p className="text-[#5a6370] text-sm">Community reports suggest security antennas previously had inconsistent detection zones depending on placement angle. After Patch 1.3.1, antennas work reliably when placed symmetrically on both sides of the entrance. This reduces shoplifting losses, which can save $20-$60/day in larger stores. Place antennas 2-3 tiles from the door frame, facing inward.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">NPC Vending Machine Fix</h3>
+                <p className="text-[#5a6370] text-sm">Customers previously got stuck near vending machines, creating bottlenecks that reduced foot traffic. After the patch, vending machines can be placed near entrances without blocking customer flow. This opens up a new revenue stream — vending machines require no staff and generate passive income. Community reports suggest a well-placed vending machine adds $10-$25/day.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Furniture Color Dropdown Fix</h3>
+                <p className="text-[#5a6370] text-sm">While cosmetic, this fix lets you color-code shelves by category. For example, red shelves for alcohol, blue for frozen, green for produce. This speeds up restocking visually and reduces the time you spend hunting for the right shelf. Less time restocking = more time at checkout = more sales.</p>
               </div>
             </div>
           </section>
@@ -317,10 +372,6 @@ export default function Page() {
                 <h3 className="font-semibold text-[#d97706] mb-1">Product Tier List</h3>
                 <p className="text-[#5a6370] text-sm">See every product ranked by profit margin, demand, and management difficulty.</p>
               </Link>
-              <Link href="/guides/beginner-tips/" className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb] hover:border-[#d97706] transition-colors block">
-                <h3 className="font-semibold text-[#d97706] mb-1">Beginner Tips</h3>
-                <p className="text-[#5a6370] text-sm">Essential tips for new players: first-day checklist, UI overview, and core mechanics.</p>
-              </Link>
             </div>
           </section>
 
@@ -352,8 +403,55 @@ export default function Page() {
               </div>
             </div>
           </section>
+
+          {/* GEO Quick Answers */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <DollarSign className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Quick Answers</h2>
+            </div>
+            <div className="space-y-4">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">How do I make money fast?</h3>
+                <p className="text-[#5a6370] text-sm">Apply tiered markups: 1.2x on essentials, 1.3x–1.5x on snacks, 1.5x–2.0x on licensed products. Minimize waste by ordering conservatively — spoilage is the biggest profit killer. On rainy days, raise prices 5–10% since customers are less price-sensitive. The fastest money is in high-turnover snacks and soft drinks.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">How do I avoid losing money to spoilage?</h3>
+                <p className="text-[#5a6370] text-sm">Order conservatively — buy only what you expect to sell in one day. Check both suppliers for better wholesale prices before ordering. Discount perishables 20–30% near end-of-day to sell before spoilage. Even at a discount, recovering wholesale cost is better than throwing away expired goods at 100% loss.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">What is the best promotional timing for higher profit?</h3>
+                <p className="text-[#5a6370] text-sm">Lower prices 10–15% before weekends and holidays — higher foot traffic more than compensates. Raise prices 5–10% on rainy days (customers less price-sensitive). Keep standard prices on slow weekdays. Discount perishables 20–30% at end-of-day to avoid waste.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#181c25] mb-1">How to make $1,000 per day?</h3>
+                <p className="text-[#5a6370] text-sm">You need alcohol/tobacco licenses, a freezer for frozen foods, 8+ shelves of high-turnover stock, and at least one cashier. Target $500 from snacks/drinks, $300 from frozen/energy, $200 from alcohol/tobacco.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
+
+      <footer className="border-t border-[#e5e7eb] py-8 bg-[#f6f8f7]">
+        <div className="max-w-4xl mx-auto px-6 text-center text-[#8a9299] text-sm space-y-3">
+          <p>
+            Supermarket Simulator Guide — Unofficial fan site. Not affiliated with Nokta Games.
+          </p>
+          <p>
+            All game content, names, and trademarks are property of their respective owners.
+            This site is for informational purposes only. Information may not be 100% accurate or up-to-date.
+          </p>
+          <div className="flex items-center justify-center gap-4 pt-2">
+            <Link href="/privacy-policy/" className="text-[#d97706] hover:underline">
+              Privacy Policy
+            </Link>
+            <span>·</span>
+            <Link href="/" className="text-[#d97706] hover:underline">
+              Home
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
