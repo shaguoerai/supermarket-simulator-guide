@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2, Smile, Trash2, ShoppingBag, ShieldAlert } from "lucide-react";
+import { ArrowLeft, Gamepad2, Smile, Trash2, ShoppingBag, ShieldAlert, Clock, Sparkles, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
-  description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
+  description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, product variety, pricing, and shoplifter handling.",
   alternates: {
     canonical: "https://smsimhub.com/guides/customer-satisfaction/",
   },
   openGraph: {
     title: "Customer Satisfaction Guide | Supermarket Simulator Guide",
-    description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, and product variety.",
+    description: "How to keep customers happy in Supermarket Simulator: queue management, cleanliness, product variety, pricing, and shoplifter handling.",
     url: "https://smsimhub.com/guides/customer-satisfaction/",
     siteName: "Supermarket Simulator Guide",
     type: "website",
@@ -93,12 +93,65 @@ export default function Page() {
 
           <section>
             <div className="flex items-center gap-3 mb-4">
+              <Clock className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Pricing and Patience</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Customers notice overpricing. If your markup exceeds 1.5x on essentials (bread, milk, eggs), satisfaction drops. For luxury items (electronics, alcohol), customers tolerate higher markups up to 2x.
+            </p>
+            <ul className="space-y-3 text-[#5a6370]">
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Essentials:</strong> 1.2x–1.3x markup. Bread, milk, eggs, canned goods.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Standard:</strong> 1.3x–1.5x markup. Snacks, drinks, household items.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Luxury:</strong> 1.5x–2.0x markup. Alcohol, electronics, frozen foods.</li>
+            </ul>
+            <p className="text-[#5a6370] leading-relaxed mt-4">
+              On rainy days, raise prices 5–10% across the board. Customers are less price-sensitive in bad weather, and the satisfaction penalty is smaller.
+            </p>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <Sparkles className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Store Atmosphere</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Lighting, decorations, and music all contribute to atmosphere. A well-lit store with plants and posters makes customers browse longer.
+            </p>
+            <ul className="space-y-3 text-[#5a6370]">
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span>Upgrade lighting before buying decorations — it has the biggest impact.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span>Place plants near checkout and entrance for maximum visibility.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span>Posters are cheap atmosphere boosters. Buy them early.</li>
+            </ul>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
               <ShieldAlert className="w-6 h-6 text-[#d97706]" />
               <h2 className="text-2xl font-bold">Handling Shoplifters</h2>
             </div>
-            <p className="text-[#5a6370] leading-relaxed">
-              Shoplifters hurt your bottom line and scare off honest customers. They appear as NPCs who grab items and sprint for the exit. Confront them by getting close and pressing the interaction key. If they escape, you lose the item permanently. Security staff help spot and catch them faster, but early-game players must handle this themselves.
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Shoplifters hurt your bottom line and scare off honest customers. They appear as NPCs who grab items and sprint for the exit. Confront them by getting close and pressing the interaction key. If they escape, you lose the item permanently.
             </p>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Security staff help spot and catch them faster, but early-game players must handle this themselves. Place security antennas near exits (see the Store Layout Guide for antenna placement tips).
+            </p>
+            <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+              <p className="text-[#d97706] font-semibold mb-2">Patch 1.3.1 Fix</p>
+              <p className="text-[#5a6370] text-sm">Security antennas now reliably detect shoplifters regardless of placement angle. If you previously had issues with antennas not triggering, re-install them after this patch.</p>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <AlertTriangle className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Common Satisfaction Killers</h2>
+            </div>
+            <ul className="space-y-3 text-[#5a6370]">
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Out-of-stock shelves:</strong> Empty shelves frustrate customers who came for specific items. Keep your top 5 sellers always stocked.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Long checkout lines:</strong> The #1 complaint. Add registers and cashiers before lines hit 4 people.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Overpricing:</strong> Watch customer reactions when they pick up items. If they frown and put it back, your price is too high.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Dirty floors:</strong> Spills and trash accumulate fast. Clean at least twice per day or hire a cleaner.</li>
+            </ul>
           </section>
         </div>
 

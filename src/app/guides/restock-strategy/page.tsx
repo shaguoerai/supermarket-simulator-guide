@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import { ArrowLeft, Gamepad2, Truck, PackageSearch, Clock } from "lucide-react";
+import { ArrowLeft, Gamepad2, Truck, PackageSearch, Clock, AlertTriangle, TrendingUp, Refrigerator } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Restock Strategy | Supermarket Simulator Guide",
-  description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
+  description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, spoilage prevention, and ordering schedules.",
   alternates: {
     canonical: "https://smsimhub.com/guides/restock-strategy/",
   },
   openGraph: {
     title: "Restock Strategy | Supermarket Simulator Guide",
-    description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, and ordering schedules.",
+    description: "Restocking strategies for Supermarket Simulator: supplier selection, inventory management, spoilage prevention, and ordering schedules.",
     url: "https://smsimhub.com/guides/restock-strategy/",
     siteName: "Supermarket Simulator Guide",
     type: "website",
@@ -93,6 +93,22 @@ export default function Page() {
 
           <section>
             <div className="flex items-center gap-3 mb-4">
+              <Refrigerator className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Spoilage Prevention</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Spoiled products are pure loss. You paid for them, they took up shelf space, and now they are worthless. Here is how to minimize spoilage:
+            </p>
+            <ul className="space-y-3 text-[#5a6370]">
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>FIFO principle:</strong> First In, First Out. When restocking, place new items behind old ones so older stock sells first.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Check expiration daily:</strong> Walk your shelves every morning and remove items about to expire. Mark them down 50% to recover some cost.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Order perishables last:</strong> When placing mixed orders, schedule perishable delivery for the same day you will shelve them.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Freezer space:</strong> Once you have a freezer, move frozen items there immediately. Freezer stock does not spoil.</li>
+            </ul>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
               <Clock className="w-6 h-6 text-[#d97706]" />
               <h2 className="text-2xl font-bold">Restock Timing</h2>
             </div>
@@ -102,6 +118,47 @@ export default function Page() {
             <p className="text-[#5a6370] leading-relaxed">
               If you have a restocker employee, set their shift to overlap with delivery times. They will automatically unpack and shelve items, freeing you to handle pricing and customer issues.
             </p>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <TrendingUp className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Top Products to Prioritize</h2>
+            </div>
+            <p className="text-[#5a6370] leading-relaxed mb-4">
+              Not all products deserve equal shelf space. Prioritize restocking these high-performing categories:
+            </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">High Turnover</h3>
+                <p className="text-[#5a6370] text-sm">Soft drinks, snacks, bread, milk. These sell fast but have lower margins. Keep them stocked at all times.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">High Margin</h3>
+                <p className="text-[#5a6370] text-sm">Alcohol, electronics, frozen foods. Slower turnover but 50-60% margins. Order conservatively.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Impulse Buys</h3>
+                <p className="text-[#5a6370] text-sm">Candy, gum, magazines. Place near checkout and restock weekly.</p>
+              </div>
+              <div className="p-4 rounded-sm bg-[#f6f8f7] border border-[#e5e7eb]">
+                <h3 className="font-semibold text-[#d97706] mb-1">Seasonal</h3>
+                <p className="text-[#5a6370] text-sm">Ice cream in summer, hot drinks in winter. Adjust orders based on in-game weather.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <AlertTriangle className="w-6 h-6 text-[#d97706]" />
+              <h2 className="text-2xl font-bold">Common Restock Mistakes</h2>
+            </div>
+            <ul className="space-y-3 text-[#5a6370]">
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Overordering perishables:</strong> Bread and milk spoil in 2-3 days. Order only what you will sell.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Ignoring sell-through data:</strong> If a product sits for 5+ days, reduce its shelf slots or discontinue it.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>Restocking during rush hour:</strong> Blocks customers and creates frustration. Restock early morning or late evening.</li>
+              <li className="flex gap-3"><span className="text-[#d97706] font-bold">•</span><strong>No backup stock:</strong> Running out of top sellers during peak hours is lost revenue. Keep 20-30% safety stock.</li>
+            </ul>
           </section>
         </div>
       </main>
